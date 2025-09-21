@@ -9,7 +9,7 @@ A lightweight, privacy-friendly web app to **log sustainable habits** and estima
 ## 🔗 Live Demo
 
 - [EcoShift – Carbon Footprint Tracker](https://ecoshifttracker.netlify.app/)
-  (Hosted on Netlify)
+   (Hosted on Netlify)
 
 ---
 
