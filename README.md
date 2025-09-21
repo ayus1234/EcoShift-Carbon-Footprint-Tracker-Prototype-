@@ -18,7 +18,8 @@ A lightweight, privacy-friendly web app to **log sustainable habits** and estima
 
 | Habit logging UI | Activity log table | Dashboard analytics |
 |---|---|---|
-| ![Habit logging](docs/images/EcoShift_Habit_Logging_UI.png) | ![Log table](docs/images/EcoShift_Activity_Log_Table.png) | ![Dashboard](docs/images/EcoShift_Dashboard_Analytics.png) |
+| ![Habit logging]<img width="1307" height="599" alt="Habit Logging Interface" src="https://github.com/user-attachments/assets/8c618d6b-6f25-4f02-952c-bda73cd5e19f" /> | ![Log table]<img width="1080" height="558" alt="Activity Log Table" src="https://github.com/user-attachments/assets/e20e2a9d-2467-4183-9f3c-20e925da921f" /> | ![Dashboard]<img width="1065" height="451" alt="Dashboard Analytics" src="https://github.com/user-attachments/assets/1bff2d31-8b40-4706-8c46-9968f8ce1459" />
+ |
 
 ---
 
