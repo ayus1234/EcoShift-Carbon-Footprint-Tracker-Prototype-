@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CO₂ Challenge – Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+  <h1>EcoShift - A Carbon Footprint Tracker</h1>
+  <p class="tag">Prototype• Data stored locally in your browser</p>
+</header>
+<main>
+  <section class="card">
+    <h2>1) Choose habit & log action</h2>
+    <div class="grid two">
+      <div>
+        <label>Date<br><input id="date" type="date"></label>
+      </div>
+      <div>
+        <label>Member (optional)<br><input id="member" type="text" placeholder="Your name"></label>
+      </div>
+      <div>
+        <label>Habit<br>
+          <select id="habit"></select>
+        </label>
+      </div>
+      <div>
+        <label>Quantity (<span id="unit">unit</span>)<br>
+          <input id="qty" type="number" min="0" step="0.01" placeholder="e.g., 3">
+        </label>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="add">Add to log</button>
+      <button id="export">Export CSV</button>
+      <label class="importer">Import CSV <input id="import" type="file" accept=".csv"></label>
+      <button id="reset" class="danger">Clear all</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2) Your log</h2>
+    <table id="log">
+      <thead>
+        <tr><th>Date</th><th>Member</th><th>Habit</th><th>Qty</th><th>Unit</th><th>CO₂ saved (kg)</th><th></th></tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr><td colspan="5">Total</td><td id="total">0.00</td><td></td></tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>3) Dashboard</h2>
+    <div class="grid two">
+      <div class="chart-container">
+        <canvas id="byHabit"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="overTime"></canvas>
+      </div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="kpi-label">Your total saved</div><div class="kpi-value" id="kpiTotal">0.00 kg</div></div>
+      <div class="kpi"><div class="kpi-label">Avg/day</div><div class="kpi-value" id="kpiAvg">0.00 kg</div></div>
+      <div class="kpi"><div class="kpi-label">Top habit</div><div class="kpi-value" id="kpiTop">–</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Methodology & factors</h2>
+    <p>Emission factors are stored in <code>factors.json</code>. You can edit them to localize for your city/country. See <a href="../docs/Methodology_and_Sources.md" target="_blank">Methodology & Sources</a>.</p>
+  </section>
+</main>
+<footer>
+  <p>© 2025 CO₂ Challenge Prototype • MIT License</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

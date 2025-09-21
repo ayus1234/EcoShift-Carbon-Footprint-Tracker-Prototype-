@@ -1,0 +1,93 @@
+{
+  "version": "2025-09-18",
+  "currency": "kgCO2e",
+  "notes": "Defaults are global/UK factors for transport and India grid factor for electricity. Adjust in Settings for your locale.",
+  "factors": [
+    {
+      "id": "cycle_instead_of_car",
+      "name": "Cycle instead of driving",
+      "unit": "km",
+      "factor": 0.1669,
+      "source": [
+        "turn1search60"
+      ],
+      "calc": "car_avg_per_km (vehicle km) saved when you cycle/walk instead of driving alone"
+    },
+    {
+      "id": "walk_instead_of_car",
+      "name": "Walk instead of driving",
+      "unit": "km",
+      "factor": 0.1669,
+      "source": [
+        "turn1search60"
+      ],
+      "calc": "same as cycle: car_avg_per_km saved"
+    },
+    {
+      "id": "bus_instead_of_car",
+      "name": "Bus instead of driving",
+      "unit": "km",
+      "factor": 0.0584,
+      "source": [
+        "turn1search60",
+        "turn1search45"
+      ],
+      "calc": "car_avg_per_km - average_local_bus per passenger-km"
+    },
+    {
+      "id": "train_instead_of_car",
+      "name": "Train instead of driving",
+      "unit": "km",
+      "factor": 0.13144,
+      "source": [
+        "turn1search60",
+        "turn1search52"
+      ],
+      "calc": "car_avg_per_km - national_rail per passenger-km"
+    },
+    {
+      "id": "plant_based_nonruminant",
+      "name": "Plant-based meal instead of chicken/fish/eggs",
+      "unit": "meal",
+      "factor": 1.0,
+      "source": [
+        "turn1search31",
+        "turn1search36"
+      ],
+      "calc": "approximate average difference per meal based on Poore & Nemecek (2018) distributions"
+    },
+    {
+      "id": "plant_based_ruminant",
+      "name": "Plant-based meal instead of beef/lamb",
+      "unit": "meal",
+      "factor": 5.0,
+      "source": [
+        "turn1search31",
+        "turn1search36"
+      ],
+      "calc": "approximate difference per meal"
+    },
+    {
+      "id": "avoid_pet_bottle_500ml",
+      "name": "Avoid single-use PET water bottle (500 mL)",
+      "unit": "bottle",
+      "factor": 0.09,
+      "source": [
+        "turn1search7",
+        "turn1search8"
+      ],
+      "calc": "approximate mid-point for 500 mL bottle production/filling"
+    },
+    {
+      "id": "save_electricity_kwh",
+      "name": "Save electricity (switch off / efficiency)",
+      "unit": "kWh",
+      "factor": 0.727,
+      "source": [
+        "turn1search2",
+        "turn1search5"
+      ],
+      "calc": "India weighted average grid factor 2023-24 tCO2/MWh -> kg/kWh"
+    }
+  ]
+}
