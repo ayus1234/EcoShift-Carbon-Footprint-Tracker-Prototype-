@@ -1,4 +1,3 @@
-
 # EcoShift – Carbon Footprint Tracker (Prototype)
 
 A lightweight, privacy-friendly web app to **log sustainable habits** and estimate **CO₂e savings** in real time. Built with **vanilla HTML/CSS/JS** and **Chart.js**, it stores data locally in your browser (no backend required).
@@ -38,25 +37,6 @@ A lightweight, privacy-friendly web app to **log sustainable habits** and estima
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **Charts**: [Chart.js CDN](https://cdn.jsdelivr.net/npm/chart.js)
 - **Storage**: `localStorage`
-
----
-
-## 📂 Project Structure
-
-```text
-.
-├── index.html                  # App UI
-├── style.css                   # Minimal, dark theme styling
-├── app.js                      # Logic: log, KPIs, charts, CSV import/export
-├── factors.json                # Emission factors (editable)
-├── docs/
-│   ├── Methodology_and_Sources.md   # (Optional) Detailed notes on factors & sources
-│   └── images/
-│       ├── EcoShift_Habit_Logging_UI.png
-│       ├── EcoShift_Activity_Log_Table.png
-│       └── EcoShift_Dashboard_Analytics.png
-└── LICENSE (MIT)
-```
 
 ---
 
